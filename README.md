@@ -68,11 +68,11 @@ This repository embraces a paradigm shift optimized for LLM capabilities rather 
 - Shared dependencies and tight coupling
 - DRY (Don't Repeat Yourself) principles
 
-**LLMs are persistent and literal** - they excel at pattern matching and repetitive tasks but struggle with complex abstractions. This suggests:
+**LLMs are dumb and persistent** - they excel at pattern matching and repetitive tasks but struggle with complex abstractions. This suggests:
 - Explicit, self-contained implementations
 - Minimal external dependencies
 - Duplicated code over shared complexity
-- WET (Write Everything Twice) acceptance
+- Embrace WET principle: Write Everything Twice, Thrice, 🍟, 👁👁👁👁👁, ... 
 
 ### Practical Implications
 
