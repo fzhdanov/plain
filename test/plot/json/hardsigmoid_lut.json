@@ -1,0 +1,3134 @@
+[
+  {
+    "operation": "HARDSIGMOID_LUT",
+    "total_samples": 513,
+    "input_range": [
+      -20.0,
+      20.0
+    ],
+    "data_structure": "top_down_tree",
+    "description": "Data organized from coarse to fine detail for hierarchical analysis",
+    "normalized_error_statistics": {
+      "PyTorch vs TTNN": {
+        "mean_abs_normalized_error": 0.024601856246590614,
+        "max_abs_normalized_error": 0.7934112548828125,
+        "median_abs_normalized_error": 0.0,
+        "mean_signed_normalized_error": -0.010009159334003925,
+        "std_normalized_error": 0.08117394894361496
+      },
+      "PyTorch vs Generic": {
+        "mean_abs_normalized_error": 0.029089367017149925,
+        "max_abs_normalized_error": 0.986968994140625,
+        "median_abs_normalized_error": 0.0,
+        "mean_signed_normalized_error": 0.026869747787714005,
+        "std_normalized_error": 0.11108528077602386
+      },
+      "TTNN vs Generic": {
+        "mean_abs_normalized_error": 0.036778904497623444,
+        "max_abs_normalized_error": 1.0,
+        "median_abs_normalized_error": 0.0,
+        "mean_signed_normalized_error": 0.036778904497623444,
+        "std_normalized_error": 0.15507841110229492
+      }
+    },
+    "normalized_error_description": "Normalized error statistics (error / max(input_quant_error, output_quant_error))"
+  },
+  {
+    "operation": "HARDSIGMOID_LUT",
+    "statistics": {
+      "TTNN": {
+        "mean_absolute_error": 0.00016624956333544105,
+        "max_absolute_error": 0.0032552089542150497,
+        "rmse": 0.0005276715965010226
+      },
+      "Generic": {
+        "mean_absolute_error": 0.00013099356146994978,
+        "max_absolute_error": 0.002604186534881592,
+        "rmse": 0.0004940300132147968
+      }
+    }
+  },
+  {
+    "top_down_data": [
+      {
+        "input": -20.0,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": 20.0,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 0.0,
+        "torch": 0.5,
+        "ttnn": 0.5,
+        "generic": 0.5
+      },
+      {
+        "input": -10.0,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": 10.0,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -15.0,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.0,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": 5.0,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.0,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -17.5,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.5,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.5,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -2.5,
+        "torch": 0.0833333358168602,
+        "ttnn": 0.083984375,
+        "generic": 0.0830078125
+      },
+      {
+        "input": 2.5,
+        "torch": 0.9166666865348816,
+        "ttnn": 0.91796875,
+        "generic": 0.9140625
+      },
+      {
+        "input": 7.5,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.5,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.5,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -18.75,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.25,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.75,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.25,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.75,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.25,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.75,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -1.25,
+        "torch": 0.2916666567325592,
+        "ttnn": 0.29296875,
+        "generic": 0.291015625
+      },
+      {
+        "input": 1.25,
+        "torch": 0.7083333134651184,
+        "ttnn": 0.70703125,
+        "generic": 0.70703125
+      },
+      {
+        "input": 3.75,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.25,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.75,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.25,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.75,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.25,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.75,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -19.375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -1.875,
+        "torch": 0.1875,
+        "ttnn": 0.189453125,
+        "generic": 0.1875
+      },
+      {
+        "input": -0.625,
+        "torch": 0.3958333432674408,
+        "ttnn": 0.396484375,
+        "generic": 0.39453125
+      },
+      {
+        "input": 0.625,
+        "torch": 0.6041666865348816,
+        "ttnn": 0.60546875,
+        "generic": 0.6015625
+      },
+      {
+        "input": 1.875,
+        "torch": 0.8125,
+        "ttnn": 0.8125,
+        "generic": 0.8125
+      },
+      {
+        "input": 3.125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -19.6875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.0625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.4375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.8125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.1875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.5625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.9375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.3125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.6875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.0625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.4375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.8125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.1875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.5625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.9375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.3125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.6875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.0625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.4375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.8125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.1875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.5625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.9375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.3125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.6875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.0625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.4375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -2.8125,
+        "torch": 0.03125,
+        "ttnn": 0.033203125,
+        "generic": 0.03125
+      },
+      {
+        "input": -2.1875,
+        "torch": 0.1354166716337204,
+        "ttnn": 0.13671875,
+        "generic": 0.134765625
+      },
+      {
+        "input": -1.5625,
+        "torch": 0.2395833283662796,
+        "ttnn": 0.240234375,
+        "generic": 0.2392578125
+      },
+      {
+        "input": -0.9375,
+        "torch": 0.34375,
+        "ttnn": 0.345703125,
+        "generic": 0.34375
+      },
+      {
+        "input": -0.3125,
+        "torch": 0.4479166567325592,
+        "ttnn": 0.447265625,
+        "generic": 0.447265625
+      },
+      {
+        "input": 0.3125,
+        "torch": 0.5520833134651184,
+        "ttnn": 0.55078125,
+        "generic": 0.55078125
+      },
+      {
+        "input": 0.9375,
+        "torch": 0.65625,
+        "ttnn": 0.65625,
+        "generic": 0.65625
+      },
+      {
+        "input": 1.5625,
+        "torch": 0.7604166865348816,
+        "ttnn": 0.76171875,
+        "generic": 0.7578125
+      },
+      {
+        "input": 2.1875,
+        "torch": 0.8645833134651184,
+        "ttnn": 0.86328125,
+        "generic": 0.86328125
+      },
+      {
+        "input": 2.8125,
+        "torch": 0.96875,
+        "ttnn": 0.96875,
+        "generic": 0.96875
+      },
+      {
+        "input": 3.4375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.0625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.6875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.3125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.9375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.5625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.1875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.8125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.4375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.0625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.6875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.3125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.9375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.5625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.1875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.8125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.4375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.0625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.6875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.3125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.9375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.5625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.1875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.8125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.4375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.0625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.6875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -19.84375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.53125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.21875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.90625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.59375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.28125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.96875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.65625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.34375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.03125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.71875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.40625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.09375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.78125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.46875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.15625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.84375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.53125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.21875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.90625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.59375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.28125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.96875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.65625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.34375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.03125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.71875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.40625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.09375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.78125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.46875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.15625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.84375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.53125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.21875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.90625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.59375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.28125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.96875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.65625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.34375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.03125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.71875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.40625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.09375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.78125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.46875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.15625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.84375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.53125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.21875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.90625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.59375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.28125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -2.96875,
+        "torch": 0.0052083334885537624,
+        "ttnn": 0.0078125,
+        "generic": 0.00518798828125
+      },
+      {
+        "input": -2.65625,
+        "torch": 0.0572916679084301,
+        "ttnn": 0.05859375,
+        "generic": 0.05712890625
+      },
+      {
+        "input": -2.34375,
+        "torch": 0.109375,
+        "ttnn": 0.111328125,
+        "generic": 0.109375
+      },
+      {
+        "input": -2.03125,
+        "torch": 0.1614583283662796,
+        "ttnn": 0.162109375,
+        "generic": 0.1611328125
+      },
+      {
+        "input": -1.71875,
+        "torch": 0.2135416716337204,
+        "ttnn": 0.21484375,
+        "generic": 0.212890625
+      },
+      {
+        "input": -1.40625,
+        "torch": 0.265625,
+        "ttnn": 0.267578125,
+        "generic": 0.265625
+      },
+      {
+        "input": -1.09375,
+        "torch": 0.3177083432674408,
+        "ttnn": 0.318359375,
+        "generic": 0.31640625
+      },
+      {
+        "input": -0.78125,
+        "torch": 0.3697916567325592,
+        "ttnn": 0.37109375,
+        "generic": 0.369140625
+      },
+      {
+        "input": -0.46875,
+        "torch": 0.421875,
+        "ttnn": 0.421875,
+        "generic": 0.421875
+      },
+      {
+        "input": -0.15625,
+        "torch": 0.4739583432674408,
+        "ttnn": 0.474609375,
+        "generic": 0.47265625
+      },
+      {
+        "input": 0.15625,
+        "torch": 0.5260416865348816,
+        "ttnn": 0.52734375,
+        "generic": 0.5234375
+      },
+      {
+        "input": 0.46875,
+        "torch": 0.578125,
+        "ttnn": 0.578125,
+        "generic": 0.578125
+      },
+      {
+        "input": 0.78125,
+        "torch": 0.6302083134651184,
+        "ttnn": 0.62890625,
+        "generic": 0.62890625
+      },
+      {
+        "input": 1.09375,
+        "torch": 0.6822916865348816,
+        "ttnn": 0.68359375,
+        "generic": 0.6796875
+      },
+      {
+        "input": 1.40625,
+        "torch": 0.734375,
+        "ttnn": 0.734375,
+        "generic": 0.734375
+      },
+      {
+        "input": 1.71875,
+        "torch": 0.7864583134651184,
+        "ttnn": 0.78515625,
+        "generic": 0.78515625
+      },
+      {
+        "input": 2.03125,
+        "torch": 0.8385416865348816,
+        "ttnn": 0.83984375,
+        "generic": 0.8359375
+      },
+      {
+        "input": 2.34375,
+        "torch": 0.890625,
+        "ttnn": 0.890625,
+        "generic": 0.890625
+      },
+      {
+        "input": 2.65625,
+        "torch": 0.9427083134651184,
+        "ttnn": 0.94140625,
+        "generic": 0.94140625
+      },
+      {
+        "input": 2.96875,
+        "torch": 0.9947916865348816,
+        "ttnn": 0.9921875,
+        "generic": 0.9921875
+      },
+      {
+        "input": 3.28125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.59375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.90625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.21875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.53125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.84375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.15625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.46875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.78125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.09375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.40625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.71875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.03125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.34375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.65625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.96875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.28125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.59375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.90625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.21875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.53125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.84375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.15625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.46875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.78125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.09375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.40625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.71875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.03125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.34375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.65625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.96875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.28125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.59375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.90625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.21875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.53125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.84375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.15625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.46875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.78125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.09375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.40625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.71875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.03125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.34375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.65625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.96875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.28125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.59375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.90625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.21875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.53125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.84375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": -19.921875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.765625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.609375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.453125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.296875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -19.140625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.984375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.828125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.671875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.515625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.359375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.203125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -18.046875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.890625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.734375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.578125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.421875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.265625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -17.109375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.953125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.796875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.640625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.484375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.328125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.171875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -16.015625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.859375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.703125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.546875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.390625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.234375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -15.078125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.921875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.765625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.609375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.453125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.296875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -14.140625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.984375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.828125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.671875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.515625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.359375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.203125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -13.046875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.890625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.734375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.578125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.421875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.265625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -12.109375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.953125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.796875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.640625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.484375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.328125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.171875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -11.015625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.859375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.703125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.546875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.390625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.234375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -10.078125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.921875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.765625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.609375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.453125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.296875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -9.140625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.984375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.828125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.671875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.515625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.359375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.203125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -8.046875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.890625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.734375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.578125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.421875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.265625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -7.109375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.953125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.796875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.640625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.484375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.328125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.171875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -6.015625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.859375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.703125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.546875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.390625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.234375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -5.078125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.921875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.765625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.609375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.453125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.296875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -4.140625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.984375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.828125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.671875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.515625,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.359375,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.203125,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -3.046875,
+        "torch": 0.0,
+        "ttnn": 0.0,
+        "generic": 0.0
+      },
+      {
+        "input": -2.890625,
+        "torch": 0.01822916604578495,
+        "ttnn": 0.021484375,
+        "generic": 0.0181884765625
+      },
+      {
+        "input": -2.734375,
+        "torch": 0.0442708320915699,
+        "ttnn": 0.046875,
+        "generic": 0.044189453125
+      },
+      {
+        "input": -2.578125,
+        "torch": 0.0703125,
+        "ttnn": 0.0703125,
+        "generic": 0.0703125
+      },
+      {
+        "input": -2.421875,
+        "torch": 0.0963541641831398,
+        "ttnn": 0.09765625,
+        "generic": 0.09619140625
+      },
+      {
+        "input": -2.265625,
+        "torch": 0.1223958358168602,
+        "ttnn": 0.125,
+        "generic": 0.1220703125
+      },
+      {
+        "input": -2.109375,
+        "torch": 0.1484375,
+        "ttnn": 0.150390625,
+        "generic": 0.1484375
+      },
+      {
+        "input": -1.953125,
+        "torch": 0.1744791716337204,
+        "ttnn": 0.17578125,
+        "generic": 0.173828125
+      },
+      {
+        "input": -1.796875,
+        "torch": 0.2005208283662796,
+        "ttnn": 0.201171875,
+        "generic": 0.2001953125
+      },
+      {
+        "input": -1.640625,
+        "torch": 0.2265625,
+        "ttnn": 0.228515625,
+        "generic": 0.2265625
+      },
+      {
+        "input": -1.484375,
+        "torch": 0.2526041567325592,
+        "ttnn": 0.25390625,
+        "generic": 0.251953125
+      },
+      {
+        "input": -1.328125,
+        "torch": 0.2786458432674408,
+        "ttnn": 0.279296875,
+        "generic": 0.27734375
+      },
+      {
+        "input": -1.171875,
+        "torch": 0.3046875,
+        "ttnn": 0.306640625,
+        "generic": 0.3046875
+      },
+      {
+        "input": -1.015625,
+        "torch": 0.3307291567325592,
+        "ttnn": 0.33203125,
+        "generic": 0.330078125
+      },
+      {
+        "input": -0.859375,
+        "torch": 0.3567708432674408,
+        "ttnn": 0.357421875,
+        "generic": 0.35546875
+      },
+      {
+        "input": -0.703125,
+        "torch": 0.3828125,
+        "ttnn": 0.3828125,
+        "generic": 0.3828125
+      },
+      {
+        "input": -0.546875,
+        "torch": 0.4088541567325592,
+        "ttnn": 0.41015625,
+        "generic": 0.408203125
+      },
+      {
+        "input": -0.390625,
+        "torch": 0.4348958432674408,
+        "ttnn": 0.435546875,
+        "generic": 0.43359375
+      },
+      {
+        "input": -0.234375,
+        "torch": 0.4609375,
+        "ttnn": 0.4609375,
+        "generic": 0.4609375
+      },
+      {
+        "input": -0.078125,
+        "torch": 0.4869791567325592,
+        "ttnn": 0.486328125,
+        "generic": 0.486328125
+      },
+      {
+        "input": 0.078125,
+        "torch": 0.5130208134651184,
+        "ttnn": 0.51171875,
+        "generic": 0.51171875
+      },
+      {
+        "input": 0.234375,
+        "torch": 0.5390625,
+        "ttnn": 0.5390625,
+        "generic": 0.5390625
+      },
+      {
+        "input": 0.390625,
+        "torch": 0.5651041865348816,
+        "ttnn": 0.56640625,
+        "generic": 0.5625
+      },
+      {
+        "input": 0.546875,
+        "torch": 0.5911458134651184,
+        "ttnn": 0.58984375,
+        "generic": 0.58984375
+      },
+      {
+        "input": 0.703125,
+        "torch": 0.6171875,
+        "ttnn": 0.6171875,
+        "generic": 0.6171875
+      },
+      {
+        "input": 0.859375,
+        "torch": 0.6432291865348816,
+        "ttnn": 0.64453125,
+        "generic": 0.640625
+      },
+      {
+        "input": 1.015625,
+        "torch": 0.6692708134651184,
+        "ttnn": 0.66796875,
+        "generic": 0.66796875
+      },
+      {
+        "input": 1.171875,
+        "torch": 0.6953125,
+        "ttnn": 0.6953125,
+        "generic": 0.6953125
+      },
+      {
+        "input": 1.328125,
+        "torch": 0.7213541865348816,
+        "ttnn": 0.72265625,
+        "generic": 0.71875
+      },
+      {
+        "input": 1.484375,
+        "torch": 0.7473958134651184,
+        "ttnn": 0.74609375,
+        "generic": 0.74609375
+      },
+      {
+        "input": 1.640625,
+        "torch": 0.7734375,
+        "ttnn": 0.7734375,
+        "generic": 0.7734375
+      },
+      {
+        "input": 1.796875,
+        "torch": 0.7994791865348816,
+        "ttnn": 0.80078125,
+        "generic": 0.796875
+      },
+      {
+        "input": 1.953125,
+        "torch": 0.8255208134651184,
+        "ttnn": 0.82421875,
+        "generic": 0.82421875
+      },
+      {
+        "input": 2.109375,
+        "torch": 0.8515625,
+        "ttnn": 0.8515625,
+        "generic": 0.8515625
+      },
+      {
+        "input": 2.265625,
+        "torch": 0.8776041865348816,
+        "ttnn": 0.875,
+        "generic": 0.875
+      },
+      {
+        "input": 2.421875,
+        "torch": 0.9036458134651184,
+        "ttnn": 0.90234375,
+        "generic": 0.90234375
+      },
+      {
+        "input": 2.578125,
+        "torch": 0.9296875,
+        "ttnn": 0.9296875,
+        "generic": 0.9296875
+      },
+      {
+        "input": 2.734375,
+        "torch": 0.9557291865348816,
+        "ttnn": 0.953125,
+        "generic": 0.953125
+      },
+      {
+        "input": 2.890625,
+        "torch": 0.9817708134651184,
+        "ttnn": 0.98046875,
+        "generic": 0.98046875
+      },
+      {
+        "input": 3.046875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.203125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.359375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.515625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.671875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.828125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 3.984375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.140625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.296875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.453125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.609375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.765625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 4.921875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.078125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.234375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.390625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.546875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.703125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 5.859375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.015625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.171875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.328125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.484375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.640625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.796875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 6.953125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.109375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.265625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.421875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.578125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.734375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 7.890625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.046875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.203125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.359375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.515625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.671875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.828125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 8.984375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.140625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.296875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.453125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.609375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.765625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 9.921875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.078125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.234375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.390625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.546875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.703125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 10.859375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.015625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.171875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.328125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.484375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.640625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.796875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 11.953125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.109375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.265625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.421875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.578125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.734375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 12.890625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.046875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.203125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.359375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.515625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.671875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.828125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 13.984375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.140625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.296875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.453125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.609375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.765625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 14.921875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.078125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.234375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.390625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.546875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.703125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 15.859375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.015625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.171875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.328125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.484375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.640625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.796875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 16.953125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.109375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.265625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.421875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.578125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.734375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 17.890625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.046875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.203125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.359375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.515625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.671875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.828125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 18.984375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.140625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.296875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.453125,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.609375,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.765625,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      },
+      {
+        "input": 19.921875,
+        "torch": 1.0,
+        "ttnn": 1.0,
+        "generic": 1.0
+      }
+    ],
+    "ordering_description": "Data points ordered from coarse to fine detail: endpoints first, then midpoints, then quarter-points, etc."
+  }
+]

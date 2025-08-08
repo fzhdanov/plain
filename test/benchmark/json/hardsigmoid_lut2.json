@@ -1,0 +1,447 @@
+{
+  "operation_name": "HARDSIGMOID_LUT2",
+  "speedup_analysis": [
+    {
+      "tensor_size": 4194304,
+      "test_name": "Small",
+      "ttnn_time_ms": 1.1184072494506836,
+      "generic_time_ms": 0.7831907272338867,
+      "speedup_factor": 1.4280139058856478,
+      "speedup_display": "1.4x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 16777216,
+      "test_name": "Medium",
+      "ttnn_time_ms": 1.5432000160217285,
+      "generic_time_ms": 1.0466337203979492,
+      "speedup_factor": 1.4744413312376137,
+      "speedup_display": "1.5x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 67108864,
+      "test_name": "Large",
+      "ttnn_time_ms": 4.619622230529785,
+      "generic_time_ms": 2.048826217651367,
+      "speedup_factor": 2.2547652849861524,
+      "speedup_display": "2.3x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 268435456,
+      "test_name": "Huge",
+      "ttnn_time_ms": 16.8701171875,
+      "generic_time_ms": 6.023645401000977,
+      "speedup_factor": 2.8006491193350485,
+      "speedup_display": "2.8x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    }
+  ],
+  "precision_analysis": {
+    "description": "TTNN vs Generic precision analysis",
+    "tensor_size": 4194304,
+    "raw_abs_mean": 7.287525177001953,
+    "raw_abs_max": 20.0,
+    "norm_abs_mean": 131.47506713867188,
+    "norm_abs_max": 416.0,
+    "pass_threshold": 2.0,
+    "status": "FAILED"
+  },
+  "benchmark_results": [
+    {
+      "test_name": "Small HARDSIGMOID_LUT2",
+      "operation_name": "TTNN HARDSIGMOID_LUT2",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 1.3860464096069336,
+        "std_dev_ms": 0.22590160369873047,
+        "confidence_interval_ms": 0.45180320739746094,
+        "individual_times_ms": [
+          1.611948013305664,
+          1.1601448059082031
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.1184072494506836,
+        "std_dev_ms": 0.045021494096204026,
+        "confidence_interval_ms": 0.09004298819240805,
+        "individual_times_ms": [
+          1.1086463928222656,
+          1.1875629425048828,
+          1.0759830474853516,
+          1.1205673217773438,
+          1.0883808135986328,
+          1.1043548583984375,
+          1.2829303741455078,
+          1.0814666748046875,
+          1.0864734649658203,
+          1.0771751403808594,
+          1.1837482452392578,
+          1.0938644409179688,
+          1.079559326171875,
+          1.112222671508789,
+          1.168966293334961,
+          1.1069774627685547,
+          1.0786056518554688,
+          1.1234283447265625,
+          1.0831356048583984,
+          1.1417865753173828,
+          1.1444091796875,
+          1.077890396118164,
+          1.0876655578613281,
+          1.0745525360107422,
+          1.1947154998779297,
+          1.119852066040039,
+          1.1184215545654297,
+          1.1217594146728516,
+          1.224517822265625,
+          1.1746883392333984,
+          1.2042522430419922,
+          1.154184341430664,
+          1.0864734649658203,
+          1.0821819305419922,
+          1.1365413665771484,
+          1.1026859283447266,
+          1.0862350463867188,
+          1.1036396026611328,
+          1.077890396118164,
+          1.1572837829589844,
+          1.1153221130371094,
+          1.1091232299804688,
+          1.0833740234375,
+          1.0905265808105469,
+          1.077413558959961,
+          1.1587142944335938,
+          1.0945796966552734,
+          1.0793209075927734,
+          1.1074542999267578,
+          1.088857650756836
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Medium HARDSIGMOID_LUT2",
+      "operation_name": "TTNN HARDSIGMOID_LUT2",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 1.6115903854370117,
+        "std_dev_ms": 0.004172325134277344,
+        "confidence_interval_ms": 0.008344650268554688,
+        "individual_times_ms": [
+          1.615762710571289,
+          1.6074180603027344
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.5432000160217285,
+        "std_dev_ms": 0.026547164718142738,
+        "confidence_interval_ms": 0.053094329436285476,
+        "individual_times_ms": [
+          1.5454292297363281,
+          1.5904903411865234,
+          1.5184879302978516,
+          1.528024673461914,
+          1.588582992553711,
+          1.5416145324707031,
+          1.5239715576171875,
+          1.5072822570800781,
+          1.5187263488769531,
+          1.5795230865478516,
+          1.5423297882080078,
+          1.5323162078857422,
+          1.5306472778320312,
+          1.5058517456054688,
+          1.5654563903808594,
+          1.5447139739990234,
+          1.5177726745605469,
+          1.554727554321289,
+          1.5361309051513672,
+          1.5919208526611328
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDSIGMOID_LUT2",
+      "operation_name": "TTNN HARDSIGMOID_LUT2",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 5.5724382400512695,
+        "std_dev_ms": 0.9714365005493164,
+        "confidence_interval_ms": 1.9428730010986328,
+        "individual_times_ms": [
+          6.543874740600586,
+          4.601001739501953
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 4.619622230529785,
+        "std_dev_ms": 0.03210436086720725,
+        "confidence_interval_ms": 0.0642087217344145,
+        "individual_times_ms": [
+          4.661321640014648,
+          4.620552062988281,
+          4.672765731811523,
+          4.616975784301758,
+          4.575967788696289,
+          4.661083221435547,
+          4.593610763549805,
+          4.595756530761719,
+          4.6024322509765625,
+          4.595756530761719
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDSIGMOID_LUT2",
+      "operation_name": "TTNN HARDSIGMOID_LUT2",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 21.474719047546387,
+        "std_dev_ms": 4.962325096130371,
+        "confidence_interval_ms": 9.924650192260742,
+        "individual_times_ms": [
+          26.437044143676758,
+          16.512393951416016
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 16.8701171875,
+        "std_dev_ms": 0.8515155597366418,
+        "confidence_interval_ms": 1.7030311194732837,
+        "individual_times_ms": [
+          16.627788543701172,
+          16.501903533935547,
+          16.47472381591797,
+          16.524791717529297,
+          16.486644744873047,
+          16.54505729675293,
+          16.569137573242188,
+          19.393205642700195,
+          16.95990562438965,
+          16.618013381958008
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Small HARDSIGMOID_LUT2",
+      "operation_name": "Generic HARDSIGMOID_LUT2",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 314.15605545043945,
+        "std_dev_ms": 313.1289482116699,
+        "confidence_interval_ms": 626.2578964233398,
+        "individual_times_ms": [
+          627.2850036621094,
+          1.0271072387695312
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.7831907272338867,
+        "std_dev_ms": 0.04224078619010625,
+        "confidence_interval_ms": 0.0844815723802125,
+        "individual_times_ms": [
+          0.797271728515625,
+          0.8077621459960938,
+          0.7598400115966797,
+          0.7894039154052734,
+          0.7443428039550781,
+          0.8254051208496094,
+          0.7872581481933594,
+          0.8914470672607422,
+          0.7579326629638672,
+          0.7510185241699219,
+          0.7624626159667969,
+          0.8635520935058594,
+          0.7581710815429688,
+          0.7646083831787109,
+          0.7421970367431641,
+          0.7653236389160156,
+          0.8225440979003906,
+          0.7603168487548828,
+          0.8263587951660156,
+          0.7476806640625,
+          0.7605552673339844,
+          0.7841587066650391,
+          0.7441043853759766,
+          0.7641315460205078,
+          0.7460117340087891,
+          0.7617473602294922,
+          0.8454322814941406,
+          0.7729530334472656,
+          0.9353160858154297,
+          0.7941722869873047,
+          0.7774829864501953,
+          0.8101463317871094,
+          0.7483959197998047,
+          0.7479190826416016,
+          0.7584095001220703,
+          0.7684230804443359,
+          0.8525848388671875,
+          0.7622241973876953,
+          0.83160400390625,
+          0.7510185241699219,
+          0.7643699645996094,
+          0.7886886596679688,
+          0.7460117340087891,
+          0.743865966796875,
+          0.7426738739013672,
+          0.7598400115966797,
+          0.8158683776855469,
+          0.7421970367431641,
+          0.8425712585449219,
+          0.7717609405517578
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {
+        "raw_mean_abs_error": 7.287525177001953,
+        "raw_max_abs_error": 20.0,
+        "normalized_error_mean": 131.47506713867188,
+        "normalized_error_max": 416.0
+      }
+    },
+    {
+      "test_name": "Medium HARDSIGMOID_LUT2",
+      "operation_name": "Generic HARDSIGMOID_LUT2",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 312.7312660217285,
+        "std_dev_ms": 311.4123344421387,
+        "confidence_interval_ms": 622.8246688842773,
+        "individual_times_ms": [
+          624.1436004638672,
+          1.3189315795898438
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.0466337203979492,
+        "std_dev_ms": 0.029477533568766926,
+        "confidence_interval_ms": 0.05895506713753385,
+        "individual_times_ms": [
+          1.0824203491210938,
+          1.0848045349121094,
+          1.0225772857666016,
+          1.0957717895507812,
+          1.0983943939208984,
+          1.0492801666259766,
+          1.027822494506836,
+          1.0418891906738281,
+          1.0020732879638672,
+          1.0099411010742188,
+          1.0442733764648438,
+          1.0874271392822266,
+          1.0263919830322266,
+          1.0106563568115234,
+          1.0094642639160156,
+          1.0395050048828125,
+          1.046895980834961,
+          1.0638236999511719,
+          1.0530948638916016,
+          1.0361671447753906
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDSIGMOID_LUT2",
+      "operation_name": "Generic HARDSIGMOID_LUT2",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 321.6581344604492,
+        "std_dev_ms": 319.37694549560547,
+        "confidence_interval_ms": 638.7538909912109,
+        "individual_times_ms": [
+          641.0350799560547,
+          2.28118896484375
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.048826217651367,
+        "std_dev_ms": 0.02424335965558332,
+        "confidence_interval_ms": 0.04848671931116664,
+        "individual_times_ms": [
+          2.1016597747802734,
+          2.015352249145508,
+          2.0418167114257812,
+          2.0685195922851562,
+          2.0444393157958984,
+          2.0456314086914062,
+          2.0287036895751953,
+          2.0356178283691406,
+          2.0322799682617188,
+          2.0742416381835938
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDSIGMOID_LUT2",
+      "operation_name": "Generic HARDSIGMOID_LUT2",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 315.3998851776123,
+        "std_dev_ms": 309.13734436035156,
+        "confidence_interval_ms": 618.2746887207031,
+        "individual_times_ms": [
+          624.5372295379639,
+          6.262540817260742
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 6.023645401000977,
+        "std_dev_ms": 0.027352337042351807,
+        "confidence_interval_ms": 0.054704674084703614,
+        "individual_times_ms": [
+          6.06846809387207,
+          6.054878234863281,
+          6.019830703735352,
+          5.995988845825195,
+          6.018638610839844,
+          6.0482025146484375,
+          6.042957305908203,
+          5.990743637084961,
+          5.985021591186523,
+          6.011724472045898
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "ttnn_tests": 4,
+    "generic_tests": 4
+  }
+}

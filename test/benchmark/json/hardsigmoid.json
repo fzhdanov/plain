@@ -1,0 +1,447 @@
+{
+  "operation_name": "HARDSIGMOID",
+  "speedup_analysis": [
+    {
+      "tensor_size": 4194304,
+      "test_name": "Small",
+      "ttnn_time_ms": 1.1226463317871094,
+      "generic_time_ms": 0.8289241790771484,
+      "speedup_factor": 1.3543413983133723,
+      "speedup_display": "1.4x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 16777216,
+      "test_name": "Medium",
+      "ttnn_time_ms": 1.5621542930603027,
+      "generic_time_ms": 1.0396838188171387,
+      "speedup_factor": 1.5025282348219917,
+      "speedup_display": "1.5x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 67108864,
+      "test_name": "Large",
+      "ttnn_time_ms": 4.616904258728027,
+      "generic_time_ms": 2.060699462890625,
+      "speedup_factor": 2.2404549241021843,
+      "speedup_display": "2.2x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 268435456,
+      "test_name": "Huge",
+      "ttnn_time_ms": 16.776371002197266,
+      "generic_time_ms": 6.028223037719727,
+      "speedup_factor": 2.7829711835850057,
+      "speedup_display": "2.8x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    }
+  ],
+  "precision_analysis": {
+    "description": "TTNN vs Generic precision analysis",
+    "tensor_size": 4194304,
+    "raw_abs_mean": 0.0007923865923658013,
+    "raw_abs_max": 0.00390625,
+    "norm_abs_mean": 0.12365234643220901,
+    "norm_abs_max": 1.0,
+    "pass_threshold": 2.0,
+    "status": "PASSED"
+  },
+  "benchmark_results": [
+    {
+      "test_name": "Small HARDSIGMOID",
+      "operation_name": "TTNN HARDSIGMOID",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 310.11414527893066,
+        "std_dev_ms": 308.6214065551758,
+        "confidence_interval_ms": 617.2428131103516,
+        "individual_times_ms": [
+          618.7355518341064,
+          1.4927387237548828
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.1226463317871094,
+        "std_dev_ms": 0.038487495248674924,
+        "confidence_interval_ms": 0.07697499049734985,
+        "individual_times_ms": [
+          1.2001991271972656,
+          1.087188720703125,
+          1.1315345764160156,
+          1.1327266693115234,
+          1.0974407196044922,
+          1.1370182037353516,
+          1.1074542999267578,
+          1.0852813720703125,
+          1.0838508605957031,
+          1.1246204376220703,
+          1.1436939239501953,
+          1.1034011840820312,
+          1.1451244354248047,
+          1.1014938354492188,
+          1.1131763458251953,
+          1.1353492736816406,
+          1.1365413665771484,
+          1.1053085327148438,
+          1.1157989501953125,
+          1.1332035064697266,
+          1.1942386627197266,
+          1.0998249053955078,
+          1.087188720703125,
+          1.1250972747802734,
+          1.0976791381835938,
+          1.173257827758789,
+          1.127481460571289,
+          1.0848045349121094,
+          1.0914802551269531,
+          1.1000633239746094,
+          1.2216567993164062,
+          1.1026859283447266,
+          1.0991096496582031,
+          1.1098384857177734,
+          1.1494159698486328,
+          1.2812614440917969,
+          1.1010169982910156,
+          1.1069774627685547,
+          1.0883808135986328,
+          1.1124610900878906,
+          1.1835098266601562,
+          1.0972023010253906,
+          1.1012554168701172,
+          1.0895729064941406,
+          1.1234283447265625,
+          1.1436939239501953,
+          1.1043548583984375,
+          1.1093616485595703,
+          1.0869503021240234,
+          1.1186599731445312
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Medium HARDSIGMOID",
+      "operation_name": "TTNN HARDSIGMOID",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 299.8976707458496,
+        "std_dev_ms": 298.11882972717285,
+        "confidence_interval_ms": 596.2376594543457,
+        "individual_times_ms": [
+          598.0165004730225,
+          1.7788410186767578
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.5621542930603027,
+        "std_dev_ms": 0.09927805960304872,
+        "confidence_interval_ms": 0.19855611920609745,
+        "individual_times_ms": [
+          1.5413761138916016,
+          1.5249252319335938,
+          1.5187263488769531,
+          1.5156269073486328,
+          1.527547836303711,
+          1.5411376953125,
+          1.5230178833007812,
+          1.5227794647216797,
+          1.5273094177246094,
+          1.5707015991210938,
+          1.5490055084228516,
+          1.5251636505126953,
+          1.5363693237304688,
+          1.5277862548828125,
+          1.6138553619384766,
+          1.5523433685302734,
+          1.528024673461914,
+          1.554250717163086,
+          1.5592575073242188,
+          1.9838809967041016
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDSIGMOID",
+      "operation_name": "TTNN HARDSIGMOID",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 315.4928684234619,
+        "std_dev_ms": 310.6527328491211,
+        "confidence_interval_ms": 621.3054656982422,
+        "individual_times_ms": [
+          626.145601272583,
+          4.84013557434082
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 4.616904258728027,
+        "std_dev_ms": 0.031069709947345862,
+        "confidence_interval_ms": 0.062139419894691725,
+        "individual_times_ms": [
+          4.642724990844727,
+          4.603385925292969,
+          4.662275314331055,
+          4.570484161376953,
+          4.63104248046875,
+          4.583120346069336,
+          4.642724990844727,
+          4.572629928588867,
+          4.61888313293457,
+          4.64177131652832
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDSIGMOID",
+      "operation_name": "TTNN HARDSIGMOID",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 320.77085971832275,
+        "std_dev_ms": 303.96950244903564,
+        "confidence_interval_ms": 607.9390048980713,
+        "individual_times_ms": [
+          624.7403621673584,
+          16.80135726928711
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 16.776371002197266,
+        "std_dev_ms": 0.23704674875013795,
+        "confidence_interval_ms": 0.4740934975002759,
+        "individual_times_ms": [
+          16.648292541503906,
+          16.826868057250977,
+          16.485214233398438,
+          16.460418701171875,
+          16.556978225708008,
+          16.82758331298828,
+          17.152786254882812,
+          17.05145835876465,
+          17.06409454345703,
+          16.69001579284668
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Small HARDSIGMOID",
+      "operation_name": "Generic HARDSIGMOID",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 308.8376522064209,
+        "std_dev_ms": 307.7549934387207,
+        "confidence_interval_ms": 615.5099868774414,
+        "individual_times_ms": [
+          616.5926456451416,
+          1.0826587677001953
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.8289241790771484,
+        "std_dev_ms": 0.30734869834824735,
+        "confidence_interval_ms": 0.6146973966964947,
+        "individual_times_ms": [
+          0.8053779602050781,
+          0.7622241973876953,
+          0.7939338684082031,
+          0.8301734924316406,
+          0.7684230804443359,
+          0.81634521484375,
+          0.8358955383300781,
+          0.7791519165039062,
+          0.7965564727783203,
+          0.7686614990234375,
+          0.7917881011962891,
+          0.7917881011962891,
+          0.7851123809814453,
+          0.8282661437988281,
+          0.7524490356445312,
+          0.7748603820800781,
+          0.7700920104980469,
+          0.7524490356445312,
+          0.7829666137695312,
+          0.7870197296142578,
+          0.7789134979248047,
+          0.7791519165039062,
+          0.7596015930175781,
+          0.8556842803955078,
+          0.7836818695068359,
+          0.7817745208740234,
+          0.7624626159667969,
+          0.7588863372802734,
+          0.7939338684082031,
+          0.7646083831787109,
+          0.7665157318115234,
+          0.7805824279785156,
+          0.7631778717041016,
+          0.8444786071777344,
+          0.7877349853515625,
+          0.7851123809814453,
+          0.8018016815185547,
+          0.7500648498535156,
+          2.9730796813964844,
+          0.7677078247070312,
+          0.8327960968017578,
+          0.7762908935546875,
+          0.7498264312744141,
+          0.7607936859130859,
+          0.7562637329101562,
+          0.8182525634765625,
+          0.774383544921875,
+          0.7784366607666016,
+          0.8027553558349609,
+          0.7839202880859375
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {
+        "raw_mean_abs_error": 0.0007923865923658013,
+        "raw_max_abs_error": 0.00390625,
+        "normalized_error_mean": 0.12365234643220901,
+        "normalized_error_max": 1.0
+      }
+    },
+    {
+      "test_name": "Medium HARDSIGMOID",
+      "operation_name": "Generic HARDSIGMOID",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 341.89140796661377,
+        "std_dev_ms": 340.6120538711548,
+        "confidence_interval_ms": 681.2241077423096,
+        "individual_times_ms": [
+          682.5034618377686,
+          1.2793540954589844
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.0396838188171387,
+        "std_dev_ms": 0.014905428275454964,
+        "confidence_interval_ms": 0.02981085655090993,
+        "individual_times_ms": [
+          1.0530948638916016,
+          1.0161399841308594,
+          1.070261001586914,
+          1.0302066802978516,
+          1.0271072387695312,
+          1.0356903076171875,
+          1.039266586303711,
+          1.0309219360351562,
+          1.0349750518798828,
+          1.0273456573486328,
+          1.0395050048828125,
+          1.0645389556884766,
+          1.0232925415039062,
+          1.0385513305664062,
+          1.054525375366211,
+          1.0323524475097656,
+          1.0623931884765625,
+          1.0569095611572266,
+          1.0247230529785156,
+          1.0318756103515625
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDSIGMOID",
+      "operation_name": "Generic HARDSIGMOID",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 308.9412450790405,
+        "std_dev_ms": 306.6791296005249,
+        "confidence_interval_ms": 613.3582592010498,
+        "individual_times_ms": [
+          615.6203746795654,
+          2.262115478515625
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.060699462890625,
+        "std_dev_ms": 0.030684350716711037,
+        "confidence_interval_ms": 0.061368701433422074,
+        "individual_times_ms": [
+          2.0589828491210938,
+          2.0172595977783203,
+          2.0821094512939453,
+          2.0623207092285156,
+          2.065420150756836,
+          2.0613670349121094,
+          2.050638198852539,
+          2.035856246948242,
+          2.1364688873291016,
+          2.036571502685547
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDSIGMOID",
+      "operation_name": "Generic HARDSIGMOID",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 330.04629611968994,
+        "std_dev_ms": 323.7398862838745,
+        "confidence_interval_ms": 647.479772567749,
+        "individual_times_ms": [
+          653.7861824035645,
+          6.30640983581543
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 6.028223037719727,
+        "std_dev_ms": 0.02373954755712165,
+        "confidence_interval_ms": 0.0474790951142433,
+        "individual_times_ms": [
+          6.016969680786133,
+          6.002187728881836,
+          6.029367446899414,
+          6.044149398803711,
+          5.990266799926758,
+          6.045341491699219,
+          6.019830703735352,
+          6.011724472045898,
+          6.073951721191406,
+          6.048440933227539
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "ttnn_tests": 4,
+    "generic_tests": 4
+  }
+}

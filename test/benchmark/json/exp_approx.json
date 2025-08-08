@@ -1,0 +1,447 @@
+{
+  "operation_name": "EXP_APPROX",
+  "speedup_analysis": [
+    {
+      "tensor_size": 4194304,
+      "test_name": "Small",
+      "ttnn_time_ms": 0.40517330169677734,
+      "generic_time_ms": 0.8262062072753906,
+      "speedup_factor": 0.490402151580211,
+      "speedup_display": "0.49x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 16777216,
+      "test_name": "Medium",
+      "ttnn_time_ms": 0.7894158363342285,
+      "generic_time_ms": 1.0496020317077637,
+      "speedup_factor": 0.7521096686996718,
+      "speedup_display": "0.75x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 67108864,
+      "test_name": "Large",
+      "ttnn_time_ms": 2.2580862045288086,
+      "generic_time_ms": 2.1341562271118164,
+      "speedup_factor": 1.0580697775742072,
+      "speedup_display": "1.1x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 268435456,
+      "test_name": "Huge",
+      "ttnn_time_ms": 7.901358604431152,
+      "generic_time_ms": 6.462311744689941,
+      "speedup_factor": 1.222682983519585,
+      "speedup_display": "1.2x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    }
+  ],
+  "precision_analysis": {
+    "description": "TTNN vs Generic precision analysis",
+    "tensor_size": 4194304,
+    "raw_abs_mean": 0.37635526061058044,
+    "raw_abs_max": 4.5,
+    "norm_abs_mean": 5.33160924911499,
+    "norm_abs_max": 18.0,
+    "pass_threshold": 2.0,
+    "status": "FAILED"
+  },
+  "benchmark_results": [
+    {
+      "test_name": "Small EXP_APPROX",
+      "operation_name": "TTNN EXP_APPROX",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 0.5780458450317383,
+        "std_dev_ms": 0.1665353775024414,
+        "confidence_interval_ms": 0.3330707550048828,
+        "individual_times_ms": [
+          0.7445812225341797,
+          0.4115104675292969
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.40517330169677734,
+        "std_dev_ms": 0.021210148282945,
+        "confidence_interval_ms": 0.04242029656589,
+        "individual_times_ms": [
+          0.4215240478515625,
+          0.3991127014160156,
+          0.4029273986816406,
+          0.3936290740966797,
+          0.3886222839355469,
+          0.4360675811767578,
+          0.3886222839355469,
+          0.3902912139892578,
+          0.4143714904785156,
+          0.4456043243408203,
+          0.41174888610839844,
+          0.40411949157714844,
+          0.3895759582519531,
+          0.3914833068847656,
+          0.4203319549560547,
+          0.40984153747558594,
+          0.392913818359375,
+          0.3910064697265625,
+          0.3924369812011719,
+          0.3924369812011719,
+          0.4897117614746094,
+          0.43201446533203125,
+          0.4169940948486328,
+          0.4622936248779297,
+          0.42319297790527344,
+          0.40078163146972656,
+          0.3905296325683594,
+          0.4000663757324219,
+          0.3898143768310547,
+          0.38886070251464844,
+          0.40030479431152344,
+          0.3902912139892578,
+          0.3936290740966797,
+          0.396728515625,
+          0.3879070281982422,
+          0.44727325439453125,
+          0.4138946533203125,
+          0.4024505615234375,
+          0.39577484130859375,
+          0.3933906555175781,
+          0.4019737243652344,
+          0.385284423828125,
+          0.4279613494873047,
+          0.3898143768310547,
+          0.39196014404296875,
+          0.39649009704589844,
+          0.39124488830566406,
+          0.39076805114746094,
+          0.392913818359375,
+          0.39768218994140625
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Medium EXP_APPROX",
+      "operation_name": "TTNN EXP_APPROX",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 0.8729696273803711,
+        "std_dev_ms": 0.06830692291259766,
+        "confidence_interval_ms": 0.1366138458251953,
+        "individual_times_ms": [
+          0.9412765502929688,
+          0.8046627044677734
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.7894158363342285,
+        "std_dev_ms": 0.08507653808281242,
+        "confidence_interval_ms": 0.17015307616562483,
+        "individual_times_ms": [
+          0.7841587066650391,
+          0.766754150390625,
+          0.7724761962890625,
+          0.7801055908203125,
+          0.8203983306884766,
+          1.1553764343261719,
+          0.7588863372802734,
+          0.7693767547607422,
+          0.7596015930175781,
+          0.7593631744384766,
+          0.7610321044921875,
+          0.7760524749755859,
+          0.7596015930175781,
+          0.7748603820800781,
+          0.7610321044921875,
+          0.7700920104980469,
+          0.7741451263427734,
+          0.7658004760742188,
+          0.7593631744384766,
+          0.7598400115966797
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large EXP_APPROX",
+      "operation_name": "TTNN EXP_APPROX",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 3.2138824462890625,
+        "std_dev_ms": 0.9889602661132812,
+        "confidence_interval_ms": 1.9779205322265625,
+        "individual_times_ms": [
+          4.202842712402344,
+          2.2249221801757812
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.2580862045288086,
+        "std_dev_ms": 0.13160560657214831,
+        "confidence_interval_ms": 0.26321121314429663,
+        "individual_times_ms": [
+          2.2978782653808594,
+          2.1941661834716797,
+          2.2139549255371094,
+          2.1882057189941406,
+          2.188444137573242,
+          2.1963119506835938,
+          2.190828323364258,
+          2.260446548461914,
+          2.639293670654297,
+          2.211332321166992
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge EXP_APPROX",
+      "operation_name": "TTNN EXP_APPROX",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 12.91799545288086,
+        "std_dev_ms": 5.003690719604492,
+        "confidence_interval_ms": 10.007381439208984,
+        "individual_times_ms": [
+          17.92168617248535,
+          7.914304733276367
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 7.901358604431152,
+        "std_dev_ms": 0.010532624776518982,
+        "confidence_interval_ms": 0.021065249553037964,
+        "individual_times_ms": [
+          7.893800735473633,
+          7.889509201049805,
+          7.9212188720703125,
+          7.8887939453125,
+          7.906198501586914,
+          7.911205291748047,
+          7.902622222900391,
+          7.911443710327148,
+          7.898807525634766,
+          7.889986038208008
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Small EXP_APPROX",
+      "operation_name": "Generic EXP_APPROX",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 347.0571041107178,
+        "std_dev_ms": 345.91197967529297,
+        "confidence_interval_ms": 691.8239593505859,
+        "individual_times_ms": [
+          692.9690837860107,
+          1.1451244354248047
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.8262062072753906,
+        "std_dev_ms": 0.3091700782512168,
+        "confidence_interval_ms": 0.6183401565024336,
+        "individual_times_ms": [
+          0.896453857421875,
+          0.8335113525390625,
+          0.8606910705566406,
+          0.8132457733154297,
+          0.8039474487304688,
+          0.8566379547119141,
+          0.7588863372802734,
+          0.8058547973632812,
+          0.8265972137451172,
+          0.7660388946533203,
+          0.7507801055908203,
+          0.7467269897460938,
+          2.9735565185546875,
+          0.8118152618408203,
+          0.91552734375,
+          0.8342266082763672,
+          0.7536411285400391,
+          0.7600784301757812,
+          0.7452964782714844,
+          0.79345703125,
+          0.7643699645996094,
+          0.7765293121337891,
+          0.7419586181640625,
+          0.7946491241455078,
+          0.7848739624023438,
+          0.7712841033935547,
+          0.7748603820800781,
+          0.7474422454833984,
+          0.7424354553222656,
+          0.7917881011962891,
+          0.7686614990234375,
+          0.7596015930175781,
+          0.7486343383789062,
+          0.7834434509277344,
+          0.7784366607666016,
+          0.7719993591308594,
+          0.7517337799072266,
+          0.7712841033935547,
+          0.7405281066894531,
+          0.7889270782470703,
+          0.7719993591308594,
+          0.7774829864501953,
+          0.7503032684326172,
+          0.7789134979248047,
+          0.7791519165039062,
+          0.7643699645996094,
+          0.7493495941162109,
+          0.7402896881103516,
+          0.7476806640625,
+          0.7903575897216797
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {
+        "raw_mean_abs_error": 0.37635526061058044,
+        "raw_max_abs_error": 4.5,
+        "normalized_error_mean": 5.33160924911499,
+        "normalized_error_max": 18.0
+      }
+    },
+    {
+      "test_name": "Medium EXP_APPROX",
+      "operation_name": "Generic EXP_APPROX",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 377.42912769317627,
+        "std_dev_ms": 376.1793375015259,
+        "confidence_interval_ms": 752.3586750030518,
+        "individual_times_ms": [
+          753.6084651947021,
+          1.2497901916503906
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.0496020317077637,
+        "std_dev_ms": 0.039836189889329784,
+        "confidence_interval_ms": 0.07967237977865957,
+        "individual_times_ms": [
+          1.0628700256347656,
+          1.0182857513427734,
+          1.04522705078125,
+          1.0271072387695312,
+          1.0581016540527344,
+          1.1487007141113281,
+          1.0268688201904297,
+          1.0352134704589844,
+          1.0106563568115234,
+          1.0483264923095703,
+          1.020193099975586,
+          1.1553764343261719,
+          1.0352134704589844,
+          1.0371208190917969,
+          1.0285377502441406,
+          1.0905265808105469,
+          1.0793209075927734,
+          1.0123252868652344,
+          1.0273456573486328,
+          1.0247230529785156
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large EXP_APPROX",
+      "operation_name": "Generic EXP_APPROX",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 320.2561140060425,
+        "std_dev_ms": 317.9134130477905,
+        "confidence_interval_ms": 635.826826095581,
+        "individual_times_ms": [
+          638.169527053833,
+          2.342700958251953
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.1341562271118164,
+        "std_dev_ms": 0.155960126246104,
+        "confidence_interval_ms": 0.311920252492208,
+        "individual_times_ms": [
+          2.5784969329833984,
+          2.0580291748046875,
+          2.2268295288085938,
+          2.0599365234375,
+          2.048969268798828,
+          2.0749568939208984,
+          2.0749568939208984,
+          2.0728111267089844,
+          2.0885467529296875,
+          2.0580291748046875
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge EXP_APPROX",
+      "operation_name": "Generic EXP_APPROX",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 325.81770420074463,
+        "std_dev_ms": 319.4514513015747,
+        "confidence_interval_ms": 638.9029026031494,
+        "individual_times_ms": [
+          645.2691555023193,
+          6.366252899169922
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 6.462311744689941,
+        "std_dev_ms": 0.6453220098921831,
+        "confidence_interval_ms": 1.2906440197843663,
+        "individual_times_ms": [
+          6.068229675292969,
+          5.99360466003418,
+          8.245229721069336,
+          6.637334823608398,
+          6.216764450073242,
+          6.076574325561523,
+          6.81614875793457,
+          6.0749053955078125,
+          6.286144256591797,
+          6.208181381225586
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "ttnn_tests": 4,
+    "generic_tests": 4
+  }
+}

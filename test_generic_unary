@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+    
+source /home/ubuntu/tt-metal/uv_python_env/bin/activate
+
+#TT_METAL_DPRINT_CORES=0,0
+#TT_METAL_DPRINT_CORES=all
+
+test_shape() {
+    local shape="$1"
+    echo $TT_METAL_HOME
+    timeout 10 python test_generic_unary.py --shape "$shape"
+    if [ $? -eq 124 ]; then
+        echo "Error shape $shape: Device is stuck"
+    fi
+}
+
+# Example usage
+tt-smi --reset 0
+
+test_shape "8,8,32,32"
+test_shape "8,16,32,32"
+test_shape "8,32,32,32"
+test_shape "8,17,32,32"
+test_shape "8,17,31,32"
+test_shape "8,17,32,33"
+test_shape "7,17,31,33"
+test_shape "7,5,3,31,33"
+test_shape "7"
+test_shape "1"
+test_shape "7,2"

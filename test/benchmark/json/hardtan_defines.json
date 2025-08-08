@@ -1,0 +1,447 @@
+{
+  "operation_name": "HARDTAN_DEFINES",
+  "speedup_analysis": [
+    {
+      "tensor_size": 4194304,
+      "test_name": "Small",
+      "ttnn_time_ms": 0.6437349319458008,
+      "generic_time_ms": 0.7904529571533203,
+      "speedup_factor": 0.8143874042347832,
+      "speedup_display": "0.81x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 16777216,
+      "test_name": "Medium",
+      "ttnn_time_ms": 1.0651350021362305,
+      "generic_time_ms": 1.0410666465759277,
+      "speedup_factor": 1.0231189382922445,
+      "speedup_display": "1.0x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 67108864,
+      "test_name": "Large",
+      "ttnn_time_ms": 3.1032323837280273,
+      "generic_time_ms": 2.0348072052001953,
+      "speedup_factor": 1.5250744030183019,
+      "speedup_display": "1.5x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    },
+    {
+      "tensor_size": 268435456,
+      "test_name": "Huge",
+      "ttnn_time_ms": 11.159873008728027,
+      "generic_time_ms": 6.008481979370117,
+      "speedup_factor": 1.8573531629195204,
+      "speedup_display": "1.9x",
+      "faster_implementation": "Generic",
+      "is_generic_faster": true
+    }
+  ],
+  "precision_analysis": {
+    "description": "TTNN vs Generic precision analysis",
+    "tensor_size": 4194304,
+    "raw_abs_mean": 0.0,
+    "raw_abs_max": 0.0,
+    "norm_abs_mean": 0.0,
+    "norm_abs_max": 0.0,
+    "pass_threshold": 2.0,
+    "status": "PASSED"
+  },
+  "benchmark_results": [
+    {
+      "test_name": "Small HARDTAN_DEFINES",
+      "operation_name": "TTNN HARDTAN_DEFINES",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 671.5301275253296,
+        "std_dev_ms": 670.6594228744507,
+        "confidence_interval_ms": 1341.3188457489014,
+        "individual_times_ms": [
+          1342.1895503997803,
+          0.8707046508789062
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.6437349319458008,
+        "std_dev_ms": 0.029971045299372563,
+        "confidence_interval_ms": 0.059942090598745126,
+        "individual_times_ms": [
+          0.6499290466308594,
+          0.6494522094726562,
+          0.6301403045654297,
+          0.6237030029296875,
+          0.6239414215087891,
+          0.6337165832519531,
+          0.6172657012939453,
+          0.7050037384033203,
+          0.6325244903564453,
+          0.7562637329101562,
+          0.6384849548339844,
+          0.6256103515625,
+          0.6146430969238281,
+          0.6532669067382812,
+          0.6227493286132812,
+          0.6277561187744141,
+          0.6227493286132812,
+          0.6313323974609375,
+          0.6592273712158203,
+          0.6453990936279297,
+          0.7271766662597656,
+          0.6277561187744141,
+          0.6237030029296875,
+          0.6313323974609375,
+          0.6232261657714844,
+          0.6468296051025391,
+          0.6291866302490234,
+          0.6265640258789062,
+          0.6620883941650391,
+          0.6327629089355469,
+          0.7112026214599609,
+          0.6589889526367188,
+          0.6225109100341797,
+          0.6191730499267578,
+          0.6206035614013672,
+          0.6346702575683594,
+          0.6306171417236328,
+          0.6957054138183594,
+          0.6725788116455078,
+          0.6749629974365234,
+          0.6291866302490234,
+          0.6301403045654297,
+          0.6191730499267578,
+          0.6575584411621094,
+          0.6201267242431641,
+          0.6268024444580078,
+          0.6160736083984375,
+          0.6339550018310547,
+          0.6585121154785156,
+          0.6604194641113281
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Medium HARDTAN_DEFINES",
+      "operation_name": "TTNN HARDTAN_DEFINES",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 684.7225427627563,
+        "std_dev_ms": 683.4901571273804,
+        "confidence_interval_ms": 1366.9803142547607,
+        "individual_times_ms": [
+          1368.2126998901367,
+          1.2323856353759766
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.0651350021362305,
+        "std_dev_ms": 0.0247461372585004,
+        "confidence_interval_ms": 0.0494922745170008,
+        "individual_times_ms": [
+          1.066446304321289,
+          1.0516643524169922,
+          1.0581016540527344,
+          1.0650157928466797,
+          1.0497570037841797,
+          1.1200904846191406,
+          1.054525375366211,
+          1.0457038879394531,
+          1.0454654693603516,
+          1.0590553283691406,
+          1.0521411895751953,
+          1.0952949523925781,
+          1.0418891906738281,
+          1.0457038879394531,
+          1.065969467163086,
+          1.1336803436279297,
+          1.0917186737060547,
+          1.0540485382080078,
+          1.049041748046875,
+          1.0573863983154297
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDTAN_DEFINES",
+      "operation_name": "TTNN HARDTAN_DEFINES",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 665.1084423065186,
+        "std_dev_ms": 661.7856025695801,
+        "confidence_interval_ms": 1323.5712051391602,
+        "individual_times_ms": [
+          1326.8940448760986,
+          3.3228397369384766
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 3.1032323837280273,
+        "std_dev_ms": 0.015100932918522448,
+        "confidence_interval_ms": 0.030201865837044897,
+        "individual_times_ms": [
+          3.075838088989258,
+          3.114938735961914,
+          3.1080245971679688,
+          3.1251907348632812,
+          3.1082630157470703,
+          3.089427947998047,
+          3.094911575317383,
+          3.1125545501708984,
+          3.085613250732422,
+          3.1175613403320312
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDTAN_DEFINES",
+      "operation_name": "TTNN HARDTAN_DEFINES",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 685.0261688232422,
+        "std_dev_ms": 673.6245155334473,
+        "confidence_interval_ms": 1347.2490310668945,
+        "individual_times_ms": [
+          1358.6506843566895,
+          11.401653289794922
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 11.159873008728027,
+        "std_dev_ms": 0.26705778871532504,
+        "confidence_interval_ms": 0.5341155774306501,
+        "individual_times_ms": [
+          11.074304580688477,
+          10.96034049987793,
+          11.069059371948242,
+          11.93690299987793,
+          11.006355285644531,
+          11.005401611328125,
+          11.089563369750977,
+          11.178731918334961,
+          11.153936386108398,
+          11.124134063720703
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Small HARDTAN_DEFINES",
+      "operation_name": "Generic HARDTAN_DEFINES",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 316.5653944015503,
+        "std_dev_ms": 315.55116176605225,
+        "confidence_interval_ms": 631.1023235321045,
+        "individual_times_ms": [
+          632.1165561676025,
+          1.0142326354980469
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.7904529571533203,
+        "std_dev_ms": 0.09403197325214824,
+        "confidence_interval_ms": 0.18806394650429648,
+        "individual_times_ms": [
+          0.7810592651367188,
+          0.7512569427490234,
+          0.7739067077636719,
+          0.7534027099609375,
+          0.7610321044921875,
+          1.3570785522460938,
+          1.087188720703125,
+          0.7865428924560547,
+          0.7658004760742188,
+          0.7493495941162109,
+          0.7736682891845703,
+          0.7882118225097656,
+          0.7536411285400391,
+          0.7536411285400391,
+          0.7557868957519531,
+          0.7925033569335938,
+          0.7944107055664062,
+          0.7507801055908203,
+          0.8177757263183594,
+          0.7679462432861328,
+          0.7653236389160156,
+          0.8063316345214844,
+          0.7555484771728516,
+          0.7538795471191406,
+          0.7584095001220703,
+          0.7672309875488281,
+          0.80108642578125,
+          0.7724761962890625,
+          0.7987022399902344,
+          0.7655620574951172,
+          0.7772445678710938,
+          0.7901191711425781,
+          0.7548332214355469,
+          0.7593631744384766,
+          0.7557868957519531,
+          0.7717609405517578,
+          0.8068084716796875,
+          0.7617473602294922,
+          0.8008480072021484,
+          0.7576942443847656,
+          0.7643699645996094,
+          0.7941722869873047,
+          0.7593631744384766,
+          0.7574558258056641,
+          0.759124755859375,
+          0.7653236389160156,
+          0.8025169372558594,
+          0.751495361328125,
+          0.8096694946289062,
+          0.7634162902832031
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {
+        "raw_mean_abs_error": 0.0,
+        "raw_max_abs_error": 0.0,
+        "normalized_error_mean": 0.0,
+        "normalized_error_max": 0.0
+      }
+    },
+    {
+      "test_name": "Medium HARDTAN_DEFINES",
+      "operation_name": "Generic HARDTAN_DEFINES",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 324.8624801635742,
+        "std_dev_ms": 323.6103057861328,
+        "confidence_interval_ms": 647.2206115722656,
+        "individual_times_ms": [
+          648.472785949707,
+          1.2521743774414062
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.0410666465759277,
+        "std_dev_ms": 0.05404836524551434,
+        "confidence_interval_ms": 0.10809673049102868,
+        "individual_times_ms": [
+          1.0454654693603516,
+          1.0402202606201172,
+          1.0085105895996094,
+          1.0213851928710938,
+          1.0144710540771484,
+          1.085519790649414,
+          1.043558120727539,
+          1.0099411010742188,
+          1.0156631469726562,
+          1.0631084442138672,
+          1.0368824005126953,
+          1.0585784912109375,
+          1.0111331939697266,
+          1.0156631469726562,
+          1.0104179382324219,
+          1.0447502136230469,
+          1.2574195861816406,
+          1.010894775390625,
+          1.0051727294921875,
+          1.0225772857666016
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large HARDTAN_DEFINES",
+      "operation_name": "Generic HARDTAN_DEFINES",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 313.3835792541504,
+        "std_dev_ms": 311.0523223876953,
+        "confidence_interval_ms": 622.1046447753906,
+        "individual_times_ms": [
+          624.4359016418457,
+          2.331256866455078
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.0348072052001953,
+        "std_dev_ms": 0.02634373181469526,
+        "confidence_interval_ms": 0.05268746362939052,
+        "individual_times_ms": [
+          2.0284652709960938,
+          2.025127410888672,
+          2.012491226196289,
+          2.0194053649902344,
+          2.016782760620117,
+          2.070903778076172,
+          2.015829086303711,
+          2.023458480834961,
+          2.097606658935547,
+          2.0380020141601562
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge HARDTAN_DEFINES",
+      "operation_name": "Generic HARDTAN_DEFINES",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 319.6260929107666,
+        "std_dev_ms": 313.3671283721924,
+        "confidence_interval_ms": 626.7342567443848,
+        "individual_times_ms": [
+          632.993221282959,
+          6.258964538574219
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 6.008481979370117,
+        "std_dev_ms": 0.06776862636802765,
+        "confidence_interval_ms": 0.1355372527360553,
+        "individual_times_ms": [
+          6.002902984619141,
+          6.048440933227539,
+          5.990743637084961,
+          6.004095077514648,
+          6.007671356201172,
+          5.9528350830078125,
+          5.974769592285156,
+          6.192684173583984,
+          5.964040756225586,
+          5.946636199951172
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "ttnn_tests": 4,
+    "generic_tests": 4
+  }
+}

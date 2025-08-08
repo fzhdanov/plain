@@ -1,0 +1,447 @@
+{
+  "operation_name": "EXP",
+  "speedup_analysis": [
+    {
+      "tensor_size": 4194304,
+      "test_name": "Small",
+      "ttnn_time_ms": 0.41486263275146484,
+      "generic_time_ms": 0.7979536056518555,
+      "speedup_factor": 0.5199082124737814,
+      "speedup_display": "0.52x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 16777216,
+      "test_name": "Medium",
+      "ttnn_time_ms": 0.7814764976501465,
+      "generic_time_ms": 1.1451244354248047,
+      "speedup_factor": 0.682438059546117,
+      "speedup_display": "0.68x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 67108864,
+      "test_name": "Large",
+      "ttnn_time_ms": 2.1999359130859375,
+      "generic_time_ms": 3.611326217651367,
+      "speedup_factor": 0.6091767346669308,
+      "speedup_display": "0.61x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    },
+    {
+      "tensor_size": 268435456,
+      "test_name": "Huge",
+      "ttnn_time_ms": 7.910323143005371,
+      "generic_time_ms": 8.259844779968262,
+      "speedup_factor": 0.9576842366565351,
+      "speedup_display": "0.96x",
+      "faster_implementation": "TTNN",
+      "is_generic_faster": false
+    }
+  ],
+  "precision_analysis": {
+    "description": "TTNN vs Generic precision analysis",
+    "tensor_size": 4194304,
+    "raw_abs_mean": 0.0,
+    "raw_abs_max": 0.0,
+    "norm_abs_mean": 0.0,
+    "norm_abs_max": 0.0,
+    "pass_threshold": 2.0,
+    "status": "PASSED"
+  },
+  "benchmark_results": [
+    {
+      "test_name": "Small EXP",
+      "operation_name": "TTNN EXP ELTWISE SFPU",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 391.99984073638916,
+        "std_dev_ms": 391.4567232131958,
+        "confidence_interval_ms": 782.9134464263916,
+        "individual_times_ms": [
+          783.456563949585,
+          0.5431175231933594
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.41486263275146484,
+        "std_dev_ms": 0.03519602251516286,
+        "confidence_interval_ms": 0.07039204503032571,
+        "individual_times_ms": [
+          0.49591064453125,
+          0.42748451232910156,
+          0.3948211669921875,
+          0.39267539978027344,
+          0.3910064697265625,
+          0.42510032653808594,
+          0.392913818359375,
+          0.39076805114746094,
+          0.3895759582519531,
+          0.392913818359375,
+          0.4572868347167969,
+          0.4031658172607422,
+          0.3936290740966797,
+          0.40459632873535156,
+          0.4189014434814453,
+          0.4398822784423828,
+          0.3933906555175781,
+          0.3924369812011719,
+          0.3924369812011719,
+          0.4372596740722656,
+          0.4100799560546875,
+          0.3924369812011719,
+          0.408172607421875,
+          0.392913818359375,
+          0.3905296325683594,
+          0.4172325134277344,
+          0.3924369812011719,
+          0.3936290740966797,
+          0.45943260192871094,
+          0.3960132598876953,
+          0.4448890686035156,
+          0.43702125549316406,
+          0.3948211669921875,
+          0.3962516784667969,
+          0.3905296325683594,
+          0.4138946533203125,
+          0.40078163146972656,
+          0.41174888610839844,
+          0.39696693420410156,
+          0.6000995635986328,
+          0.4596710205078125,
+          0.408172607421875,
+          0.4107952117919922,
+          0.4165172576904297,
+          0.3955364227294922,
+          0.41484832763671875,
+          0.4405975341796875,
+          0.4127025604248047,
+          0.3910064697265625,
+          0.42724609375
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Medium EXP",
+      "operation_name": "TTNN EXP ELTWISE SFPU",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 319.68486309051514,
+        "std_dev_ms": 318.8096284866333,
+        "confidence_interval_ms": 637.6192569732666,
+        "individual_times_ms": [
+          638.4944915771484,
+          0.8752346038818359
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.7814764976501465,
+        "std_dev_ms": 0.021460039617478777,
+        "confidence_interval_ms": 0.04292007923495755,
+        "individual_times_ms": [
+          0.8118152618408203,
+          0.7703304290771484,
+          0.7696151733398438,
+          0.7679462432861328,
+          0.7636547088623047,
+          0.8111000061035156,
+          0.7777214050292969,
+          0.7817745208740234,
+          0.766754150390625,
+          0.7627010345458984,
+          0.8513927459716797,
+          0.7703304290771484,
+          0.7677078247070312,
+          0.7660388946533203,
+          0.7686614990234375,
+          0.7884502410888672,
+          0.7741451263427734,
+          0.7901191711425781,
+          0.7731914520263672,
+          0.7960796356201172
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large EXP",
+      "operation_name": "TTNN EXP ELTWISE SFPU",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 310.8046054840088,
+        "std_dev_ms": 308.49647521972656,
+        "confidence_interval_ms": 616.9929504394531,
+        "individual_times_ms": [
+          619.3010807037354,
+          2.3081302642822266
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 2.1999359130859375,
+        "std_dev_ms": 0.014928811169436822,
+        "confidence_interval_ms": 0.029857622338873645,
+        "individual_times_ms": [
+          2.2106170654296875,
+          2.1936893463134766,
+          2.2232532501220703,
+          2.219676971435547,
+          2.1851062774658203,
+          2.18963623046875,
+          2.183198928833008,
+          2.184152603149414,
+          2.215862274169922,
+          2.1941661834716797
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge EXP",
+      "operation_name": "TTNN EXP ELTWISE SFPU",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 328.82440090179443,
+        "std_dev_ms": 320.8426237106323,
+        "confidence_interval_ms": 641.6852474212646,
+        "individual_times_ms": [
+          649.6670246124268,
+          7.981777191162109
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 7.910323143005371,
+        "std_dev_ms": 0.04426516220742914,
+        "confidence_interval_ms": 0.08853032441485828,
+        "individual_times_ms": [
+          7.89642333984375,
+          7.893085479736328,
+          7.88116455078125,
+          7.892847061157227,
+          7.883548736572266,
+          7.896900177001953,
+          7.904529571533203,
+          7.905244827270508,
+          7.908821105957031,
+          8.040666580200195
+        ]
+      },
+      "has_reference": false,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Small EXP",
+      "operation_name": "Generic EXP ELTWISE SFPU",
+      "tensor_elements": 4194304,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 50,
+      "warmup_stats": {
+        "mean_ms": 332.197904586792,
+        "std_dev_ms": 331.23326301574707,
+        "confidence_interval_ms": 662.4665260314941,
+        "individual_times_ms": [
+          663.4311676025391,
+          0.9646415710449219
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 0.7979536056518555,
+        "std_dev_ms": 0.03181358069699664,
+        "confidence_interval_ms": 0.06362716139399328,
+        "individual_times_ms": [
+          0.8039474487304688,
+          0.8082389831542969,
+          0.7636547088623047,
+          0.7650852203369141,
+          0.7681846618652344,
+          0.8342266082763672,
+          0.8363723754882812,
+          0.8780956268310547,
+          0.7715225219726562,
+          0.7641315460205078,
+          0.7951259613037109,
+          0.7989406585693359,
+          0.7636547088623047,
+          0.7688999176025391,
+          0.774383544921875,
+          0.7941722869873047,
+          0.8571147918701172,
+          0.7688999176025391,
+          0.8509159088134766,
+          0.7841587066650391,
+          0.7860660552978516,
+          0.7922649383544922,
+          0.7686614990234375,
+          0.7572174072265625,
+          0.7615089416503906,
+          0.7894039154052734,
+          0.84686279296875,
+          0.835418701171875,
+          0.8368492126464844,
+          0.7748603820800781,
+          0.7886886596679688,
+          0.8349418640136719,
+          0.7960796356201172,
+          0.7841587066650391,
+          0.7674694061279297,
+          0.8165836334228516,
+          0.8225440979003906,
+          0.8187294006347656,
+          0.8571147918701172,
+          0.7741451263427734,
+          0.8053779602050781,
+          0.7665157318115234,
+          0.7627010345458984,
+          0.7662773132324219,
+          0.7581710815429688,
+          0.8308887481689453,
+          0.8089542388916016,
+          0.7932186126708984,
+          0.8454322814941406,
+          0.8008480072021484
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {
+        "raw_mean_abs_error": 0.0,
+        "raw_max_abs_error": 0.0,
+        "normalized_error_mean": 0.0,
+        "normalized_error_max": 0.0
+      }
+    },
+    {
+      "test_name": "Medium EXP",
+      "operation_name": "Generic EXP ELTWISE SFPU",
+      "tensor_elements": 16777216,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 20,
+      "warmup_stats": {
+        "mean_ms": 325.4021406173706,
+        "std_dev_ms": 324.13017749786377,
+        "confidence_interval_ms": 648.2603549957275,
+        "individual_times_ms": [
+          649.5323181152344,
+          1.271963119506836
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 1.1451244354248047,
+        "std_dev_ms": 0.022994727270468685,
+        "confidence_interval_ms": 0.04598945454093737,
+        "individual_times_ms": [
+          1.15203857421875,
+          1.1534690856933594,
+          1.1360645294189453,
+          1.1205673217773438,
+          1.1622905731201172,
+          1.2028217315673828,
+          1.1475086212158203,
+          1.1401176452636719,
+          1.1382102966308594,
+          1.1181831359863281,
+          1.1565685272216797,
+          1.1830329895019531,
+          1.1467933654785156,
+          1.117706298828125,
+          1.1224746704101562,
+          1.1298656463623047,
+          1.1241436004638672,
+          1.1162757873535156,
+          1.171112060546875,
+          1.1632442474365234
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Large EXP",
+      "operation_name": "Generic EXP ELTWISE SFPU",
+      "tensor_elements": 67108864,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 316.38455390930176,
+        "std_dev_ms": 313.25244903564453,
+        "confidence_interval_ms": 626.5048980712891,
+        "individual_times_ms": [
+          629.6370029449463,
+          3.1321048736572266
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 3.611326217651367,
+        "std_dev_ms": 3.0853291249410373,
+        "confidence_interval_ms": 6.170658249882075,
+        "individual_times_ms": [
+          2.639293670654297,
+          12.866497039794922,
+          2.6781558990478516,
+          2.5484561920166016,
+          2.5522708892822266,
+          2.552032470703125,
+          2.562999725341797,
+          2.579927444458008,
+          2.5832653045654297,
+          2.550363540649414
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    },
+    {
+      "test_name": "Huge EXP",
+      "operation_name": "Generic EXP ELTWISE SFPU",
+      "tensor_elements": 268435456,
+      "warmup_iterations": 2,
+      "benchmark_iterations": 10,
+      "warmup_stats": {
+        "mean_ms": 332.8591585159302,
+        "std_dev_ms": 324.46396350860596,
+        "confidence_interval_ms": 648.9279270172119,
+        "individual_times_ms": [
+          657.3231220245361,
+          8.395195007324219
+        ]
+      },
+      "benchmark_stats": {
+        "mean_ms": 8.259844779968262,
+        "std_dev_ms": 0.012339422603782924,
+        "confidence_interval_ms": 0.024678845207565848,
+        "individual_times_ms": [
+          8.28242301940918,
+          8.268117904663086,
+          8.257389068603516,
+          8.249044418334961,
+          8.247852325439453,
+          8.264780044555664,
+          8.276224136352539,
+          8.259057998657227,
+          8.242130279541016,
+          8.251428604125977
+        ]
+      },
+      "has_reference": true,
+      "precision_metrics": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "ttnn_tests": 4,
+    "generic_tests": 4
+  }
+}
