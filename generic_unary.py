@@ -103,20 +103,17 @@ class GenericUnary:
         writer_rt_args = []
         compute_rt_args = []
         
-        # Store tile counts per core to ensure consistency across all kernels
-        tiles_per_core = []
-
         tile_start_id = 0
         core_id = 0
         extra_tiles_remaining = extra_tiles
         
-        for y in range(grid_y):
+        for x in range(grid_x):
             reader_row = []
             writer_row = []
             compute_row = []
             tiles_row = []
 
-            for x in range(grid_x):
+            for y in range(grid_y):
                 # Calculate tiles for this specific core - SINGLE SOURCE OF TRUTH
                 tiles_for_this_core = base_tiles_per_core
                 if extra_tiles_remaining > 0:
@@ -138,7 +135,6 @@ class GenericUnary:
             reader_rt_args.append(reader_row)
             writer_rt_args.append(writer_row)
             compute_rt_args.append(compute_row)
-            tiles_per_core.append(tiles_row)
 
         reader_kernel = read_kernel("elementwise_sfpu/general/reader_kernel.cpp")
         writer_kernel = read_kernel("elementwise_sfpu/general/writer_kernel.cpp")
@@ -193,4 +189,5 @@ class GenericUnary:
             semaphores=[],
             cbs=[in_cb_descriptor, out_cb_descriptor]
         )
+        
         return program_descriptor
