@@ -104,7 +104,7 @@ inline void exp_tile_approx_fast(uint32_t idst) {
 // USE THIS SYNTAX TO CALL THE FUNCTION!!!!
 // DO NOT CALL IT DIRECTLY!!!!
 #ifdef TRISC_MATH
-    llk_math_eltwise_unary_sfpu_params<true>(
+    _llk_math_eltwise_unary_sfpu_params_<true>(
         _calculate_exponential_approx_fast,
         idst,
         (int)VectorMode::RC,

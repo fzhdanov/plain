@@ -90,7 +90,7 @@ inline void exp_tile_unfolded(uint32_t idst) {
 // USE THIS SYNTAX TO CALL THE FUNCTION!!!!
 // DO NOT CALL IT DIRECTLY!!!!
 #ifdef TRISC_MATH
-    llk_math_eltwise_unary_sfpu_params<false>(
+    _llk_math_eltwise_unary_sfpu_params_<false>(
         _calculate_exponential_unfolded,
         idst,
         (int)VectorMode::RC,

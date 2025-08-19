@@ -84,7 +84,7 @@ inline void exp_tile_scaled(uint32_t idst, uint16_t scale_factor = 0x3F80) {
 // USE THIS SYNTAX TO CALL THE FUNCTION!!!!
 // DO NOT CALL IT DIRECTLY!!!!
 #ifdef TRISC_MATH
-    llk_math_eltwise_unary_sfpu_params<false>(
+    _llk_math_eltwise_unary_sfpu_params_<false>(
         [scale_factor](const int iterations) { _calculate_exponential_scaled(iterations, scale_factor); },
         idst,
         (int)VectorMode::RC,
